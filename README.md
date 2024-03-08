@@ -14,6 +14,6 @@ to customize the software, you need to open bingxwithdraw.py and find a dictiona
 
 time.sleep(random.randint(30, 60)) instead of 30 and 60 specify your rest range between outputs in seconds.
 
-If the code does not work, open a new issue
+If the code does not work or u have smth questions, open a new issue
 
 donate : 0x0005b9fa0D2932D5E879102919675692cF60C52a, CqC89ZhqzTxnkCPjJQYCXXTXbhw5fN1bK881daqWxcR1
