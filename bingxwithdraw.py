@@ -25,7 +25,7 @@ def main():
             "amount": AMOUNT,
             "coin": COIN,
             "network": NETWORK,
-            "timestamp": str(int(time.time() * 1000),
+            "timestamp": str(int(time.time() * 1000)),
             "walletType": "1"
         }
         paramsStr = parseParam(paramsMap)
