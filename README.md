@@ -11,4 +11,4 @@ NETWORK : enter the network. TRC20, BEP20, etc. (the network you need should be 
 
 SLEEP1, SLEEP2 = 30, 60 : instead of 30 and 60 specify your rest range between outputs in seconds.
 
-If the code does not work or u have smth questions, open a new issue
+If the code does not work or if you have suggestions for improvement, open a new issue 
