@@ -3,6 +3,8 @@ output comes from a spot account
 
 addresses are taken from addresses.txt
 
+for APIKEY and SECRETKEY, go to https://bingx.com/ru-ru/account/api/ and create an api (be sure to label it “Withdrawal”!)
+
 AMOUNT : enter the number of tokens to be output, taking into account the bingx commissions 
 
 COIN : write the ticker of the coin.
