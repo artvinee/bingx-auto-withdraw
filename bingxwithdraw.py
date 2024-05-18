@@ -7,7 +7,11 @@ from hashlib import sha256
 APIURL = "https://open-api.bingx.com"
 APIKEY = ""
 SECRETKEY = ""
-def demo():
+AMOUNT = ""
+COIN = ""
+NETWORK = ""
+
+def main():
     with open('addresses.txt', 'r') as file:
         addresses = file.readlines()
     for address in addresses:
@@ -17,10 +21,10 @@ def demo():
         paramsMap = {
             "address": address.strip(),
             "addressTag": "None",
-            "amount": "0.01",
-            "coin": "BNB",
-            "network": "BEP20",
-            "timestamp": "1709825340278",
+            "amount": AMOUNT,
+            "coin": COIN,
+            "network": NETWORK,
+            "timestamp": str(int(time.time() * 1000),
             "walletType": "1"
         }
         paramsStr = parseParam(paramsMap)
@@ -50,4 +54,4 @@ def parseParam(paramsMap):
      return paramsStr+"timestamp="+str(int(time.time() * 1000))
 
 if __name__ == '__main__':
-    print("demo:", demo())
+    print("output:", main())
