@@ -10,6 +10,7 @@ SECRETKEY = ""
 AMOUNT = ""
 COIN = ""
 NETWORK = ""
+SLEEP1, SLEEP2 = 30, 60
 
 def main():
     with open('addresses.txt', 'r') as file:
@@ -29,7 +30,7 @@ def main():
         }
         paramsStr = parseParam(paramsMap)
         print(send_request(method, path, paramsStr, payload))
-        time.sleep(random.randint(30, 60))
+        time.sleep(random.randint(SLEEP1, SLEEP2))
 
 def get_sign(api_secret, payload):
     signature = hmac.new(api_secret.encode("utf-8"), payload.encode("utf-8"), digestmod=sha256).hexdigest()
